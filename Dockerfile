@@ -8,9 +8,6 @@ RUN wget http://download.rethinkdb.com/centos/7/`uname -m`/rethinkdb.repo \
           -O /etc/yum.repos.d/rethinkdb.repo
 RUN yum install rethinkdb -y
 
-# Install the RethinkDb CLI through python PIP
-RUN pip install rethinkdb
-
 # Create the application and logging directories and set ownership to the rethinkdb user/group
 RUN mkdir -p /var/{log/rethinkdb,lib/rethinkdb,run/rethinkdb}
 RUN chown -R rethinkdb:rethinkdb /var/log/rethinkdb /var/lib/rethinkdb /var/run/rethinkdb

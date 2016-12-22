@@ -1,6 +1,6 @@
 # Centos RethinkDb
 
-The RethinkDb datastore is configured here to run inside a [Docker](https://www.docker.com) container, managed by [supervisord](https://supervisord.org/) encapsulating all the dependencies it needs and configuring it with the appropriate parameters for communicating with the web applications that use it.
+The RethinkDb datastore is configured here to run inside a [Docker](https://www.docker.com) container, encapsulating all the dependencies it needs and configuring it with the appropriate parameters for communicating with the web applications that use it.
 
 # Installation
 
